@@ -1,16 +1,14 @@
 <idea-plugin>
     <id>com.github.jokerddj.dart_json_serialize</id>
     <name>dart json serialize</name>
-    <version>1.0</version>
-    <vendor email="jokerdj@126.com">
+    <version>1.0.0</version>
+    <vendor email="jokerdj@126.com" url="https://github.com/jokerddj/dart_json_serialize.git">
         jokerdj
     </vendor>
 
     <description><![CDATA[
-     dart_json_serialize
-     dart_json_serialize
-     dart_json_serialize
-     dart_json_serialize
+     dart json factory generater
+
     ]]></description>
     <depends>Dart</depends>
     <depends>com.intellij.modules.xml</depends>
@@ -38,6 +36,7 @@
         <action id="Generate.ToJson.Dart" class="com.github.jokerddj.dart_json_serialize.DartGenerateToJsonAction"
                 text="toJson()">
             <add-to-group anchor="after" relative-to-action="Generate.EqualsAndHashcode.Dart" group-id="GenerateGroup"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt J"/>
         </action>
     </actions>
 

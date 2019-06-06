@@ -62,10 +62,11 @@ public class DartGenerateToJsonStringFix extends BaseCreateMethodsFix<DartCompon
         template.addTextSegment(" = json['");
         template.addTextSegment(component.getName());
         template.addTextSegment("']");
-        if (!iterator.hasNext()) {
-          template.addTextSegment(";\n");
-        }
       }
+      if (!iterator.hasNext()) {
+        template.addTextSegment(";\n");
+      }
+
     }
 
 
